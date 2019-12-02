@@ -13,8 +13,6 @@ import Export2Doc from "./exportToWords";
 import buildTable from "./makeTable";
 import editPassword from "./editPassword";
 
-editPassword();
-
 let myData = [];
 
 const posts = {
@@ -159,7 +157,6 @@ function loadPage(page) {
     document.querySelector('.numday').innerHTML = parseInt(posts.currentPage) + 1;
     document.querySelector('.index').classList.remove('hidden');
     document.querySelector('.start').style.display = 'none';
-    document.querySelector('.dropdown').style.display = 'none';
     loadNav();
     loadNumbers();
     let myWords = shuffle(posts.results[page]);
