@@ -15,7 +15,7 @@ body {
     margin:60px 40px 10px 40px;
     overscroll-behavior: contain;
     /* css gradient */
-    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+    background: linear-gradient(90deg, #D3CCE3 0%, #E9E4F0 100%);
 }
 
 /* Style home buttons */
