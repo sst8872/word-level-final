@@ -22,7 +22,7 @@ span.openbtn {
 
 span.openbtn:hover {
     cursor: pointer;
-    color: #3b5998;
+    color: var(--main-color);
 }
 
 .shuffleWords {
@@ -31,7 +31,7 @@ span.openbtn:hover {
 }
 
 .shuffleWords > .fa-random:hover {
-    color: #3b5998;
+    color: var(--main-color);
 }
 
 
@@ -166,7 +166,7 @@ span.numday {
     line-height: 25px;
     text-align: center;
     border: 1px solid #444;
-    background-color: #3b5998;
+    background-color: var(--main-color);
     color: white;
     margin-left: 4px;
 }

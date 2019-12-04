@@ -1,4 +1,3 @@
-import '../css/dropdwon.css';
 import '../css/loader.css';
 import '../css/style.css';
 import '../css/navbar.css';
@@ -29,6 +28,7 @@ const posts = {
 const printBtn = document.querySelector('.printer');
 const exportContent = document.getElementById('exportContent');
 const choices = document.querySelectorAll('.choice');
+const dropdown = document.querySelector('.dropdown');
 
 // Event Listeners
 window.addEventListener('load', init);

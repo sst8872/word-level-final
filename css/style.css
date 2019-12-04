@@ -1,3 +1,9 @@
+:root {
+    --main-color: #3b5998;
+    --main-bg-color: #444;
+    --main-green: rgb(76, 175, 80);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -17,13 +23,13 @@ body {
 
 .btn {
     border: none; /* Remove borders */
-    color: #444; /* White text */
+    color: var(--main-bg-color); /* White text */
     padding: 2px 1px; /* Some padding */
     font-size: 40px; /* Set a font size */
     cursor: pointer; /* Mouse pointer on hover */
 }
 .btn:hover {
-    color: #3b5998;
+    color: var(--main-color);
 }
 .home {
     margin-top: 30px;
@@ -90,7 +96,7 @@ body {
 }
 
 .box {
-    background-color: #444;
+    background-color: var(--main-bg-color);
     line-height: 1.4;
     height: 30px;
     color: #fff;
@@ -110,7 +116,7 @@ body {
     width: 180px;
     background-color: transparent; /* blue */
     border: 1px solid blue;
-    color: #444;
+    color: var(--main-bg-color);
     padding: 15px 15px;
     text-align: center;
     text-decoration: none;
@@ -172,7 +178,7 @@ body {
     text-decoration: none;
     display: inline-block;
     padding: 4px;
-    color: #444;
+    color: var(--main-bg-color);
     cursor: pointer;
 }
 
@@ -188,7 +194,7 @@ body {
     display: none;
     position: absolute;
     border: 1px solid #ddd;
-    background-color: #444;
+    background-color: var(--main-bg-color);
     color: white;
     padding: 5px;
     top: 100px;
