@@ -1,8 +1,8 @@
 let apiURLs = {
-    'level-1': 'https://script.google.com/macros/s/AKfycbyLoDyJGooiBIZhhC_R4IJDbKgz6yY8aknA5cZdj0LwAuzdSvFx/exec',
-    'level-2': 'https://script.google.com/macros/s/AKfycbzyqLGZTdZSFlGtghA2wQRpPb8yMs88uWBB92iYnAga_OhSJ9c/exec',
-    'level-3': 'https://script.google.com/macros/s/AKfycbygtkEpsZCG-9uclkUYIOULbmyPccoNHgumYQ--9Efsr3APo8Q/exec',
-    'free': 'https://script.google.com/macros/s/AKfycby66icyZOfTUZ5QKmmhjuk73ICBljuMq0s22ShovPC-XLDqk5c/exec'
+    'level-1': 'https://script.google.com/macros/s/AKfycbxA2JRgPgYF7jZERFgAgJJREF6ZCCUCcSk6E6x0FL7Kb-jScLwr/exec', // 중1
+    'level-2': 'https://script.google.com/macros/s/AKfycbwFZ8uV7OH2HNsyjkW7iOcfoCVJ6xsfHWGXm0Hoel_RTMTTn3U/exec', // 중2
+    'level-3': 'https://script.google.com/macros/s/AKfycbzymFulJIKvZJyxtm87DKMkgjN-NlQnZvfRYE5IXsvseWoDO35A/exec',  //  중3
+    'free': 'https://script.google.com/macros/s/AKfycbztpSSXsccuf-Ur22uzZ9Rk51dvYXLoB4iQOBKOhA/exec'  // free
 };
 
 

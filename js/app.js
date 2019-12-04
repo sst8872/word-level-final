@@ -19,7 +19,7 @@ const posts = {
     currentPage: 0,
     results: null,
     currentSheetID: '1_Z_bti_Wk9g-t2IgxZGYvTpKXaZAqkFt3vDmw-1BU74',
-    currentApiURL: 'https://script.google.com/macros/s/AKfycbyLoDyJGooiBIZhhC_R4IJDbKgz6yY8aknA5cZdj0LwAuzdSvFx/exec',
+    currentApiURL: 'https://script.google.com/macros/s/AKfycbxA2JRgPgYF7jZERFgAgJJREF6ZCCUCcSk6E6x0FL7Kb-jScLwr/exec',
     currentDay: 0,
     currentActive: 1
 };
