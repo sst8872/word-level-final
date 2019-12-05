@@ -39,11 +39,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\user\AppData\Roaming\npm\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\projects\finished-projects\word-level-project-final-high" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\projects\finished-projects\word-level-project-final-high\resource" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -76,7 +85,8 @@
       <workItem from="1575278377593" duration="9000" />
       <workItem from="1575278425518" duration="3780000" />
       <workItem from="1575418197102" duration="619000" />
-      <workItem from="1575466378119" duration="1567000" />
+      <workItem from="1575466378119" duration="2485000" />
+      <workItem from="1575530137214" duration="292000" />
     </task>
     <servers />
   </component>
