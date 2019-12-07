@@ -252,19 +252,19 @@ function shuffle (arr) {
 }
 
 function makeTwoCopies(event) {
-    makeWordContent(event, "white");
-    makeWordContent(event, "black");
+    makeWordContent(event, "white", "test");
+    makeWordContent(event, "black", "answer");
 }
 
 
-function makeWordContent(event, color) {
+function makeWordContent(event, color, name) {
     const numDay = document.querySelector('.numday').textContent;
     let index  = parseInt(numDay) - 1;
     let dayWords = posts.results[index];
     exportContent.innerHTML = `<h3
                                     style="text-align: center"
                                 >
-                                    Day-${index+1} TEST
+                                    Day-${index+1} ${name} 
                                 </h3><br>`;
     let tableHTML = `<table style="border: 1px solid black; border-collapse: collapse">
                         <tr>
@@ -314,7 +314,7 @@ function makeWordContent(event, color) {
     tableHTML += tableData + '</table>';
 
     exportContent.innerHTML += tableHTML;
-    Export2Doc('exportContent', `day-${index+1}.test`);
+    Export2Doc('exportContent', `day-${index+1}.${name}`);
     exportContent.innerHTML = '';
 }
 
