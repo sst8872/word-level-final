@@ -264,7 +264,7 @@ function makeWordContent(event, color) {
     exportContent.innerHTML = `<h3
                                     style="text-align: center"
                                 >
-                                    Day-${index+1} TEST;
+                                    Day-${index+1} TEST
                                 </h3><br>`;
     let tableHTML = `<table style="border: 1px solid black; border-collapse: collapse">
                         <tr>
