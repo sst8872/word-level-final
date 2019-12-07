@@ -294,13 +294,15 @@ function makeWordContent(event, color) {
                             style=" border: 1px solid black;
                                     color: black;
                                     padding-left: 4px;  
+                                    padding-right: 2px;
                                    "
                           >
                             ${i+1}. ${dayWords[i].en}</td>
                         <td 
                             style="border: 1px solid black; 
                                    color: ${color};  
-                                   padding-left: 4px; 
+                                   padding-left: 2px; 
+                                   font-size: 12px;
                                    "
                            >
                             ${dayWords[i].ko}</td>
