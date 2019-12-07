@@ -43,6 +43,7 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\user\AppData\Roaming\npm\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
@@ -88,6 +89,7 @@
       <workItem from="1575466378119" duration="2485000" />
       <workItem from="1575530137214" duration="927000" />
       <workItem from="1575720930892" duration="1138000" />
+      <workItem from="1575722105883" duration="262000" />
     </task>
     <servers />
   </component>
