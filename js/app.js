@@ -302,6 +302,7 @@ function makeWordContent(event, color) {
                             style="border: 1px solid black; 
                                    color: ${color};  
                                    padding-left: 2px; 
+                                   padding-right: 2px;
                                    font-size: 12px;
                                    "
                            >
