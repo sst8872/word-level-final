@@ -292,13 +292,15 @@ function makeWordContent(event, color) {
         let data = `<tr">
                         <td 
                             style=" border: 1px solid black;
-                                    color: black;  
+                                    color: black;
+                                    padding-left: 4px;  
                                    "
                           >
                             ${i+1}. ${dayWords[i].en}</td>
                         <td 
-                            style=" border: 1px solid black;
-                                    color: ${color};  
+                            style="border: 1px solid black; 
+                                   color: ${color};  
+                                   padding-left: 4px; 
                                    "
                            >
                             ${dayWords[i].ko}</td>
