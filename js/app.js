@@ -192,8 +192,11 @@ function loadPage(page) {
         let myInterval;
         // clearInterval(myInterval);
         tooltipOutput.style.display = 'block';
-        tooltipOutput.style.top = event.clientY + 5 + "px";
-        tooltipOutput.style.left = event.clientX + 5 + "px";
+        let box = event.target.getBoundingClientRect();
+        tooltipOutput.style.top = box.y + (-10) + 'px';
+        tooltipOutput.style.left = box.x + 'px';
+        // tooltipOutput.style.top = event.clientY + 5 + "px";
+        // tooltipOutput.style.left = event.clientX + 5 + "px";
         tooltipOutput.innerHTML = event.target.getAttribute("data-tooltip-message");
     }
 }
