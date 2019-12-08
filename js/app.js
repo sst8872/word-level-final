@@ -194,7 +194,7 @@ function loadPage(page) {
         tooltipOutput.style.display = 'block';
 
         let box = event.target.getBoundingClientRect();
-        tooltipOutput.style.top = box.y + (-15) + 'px';
+        tooltipOutput.style.top = box.y + (-10) + 'px';
         tooltipOutput.style.left = box.x + 'px';
         // tooltipOutput.style.top = event.clientY + 5 + "px";
         // tooltipOutput.style.left = event.clientX + 5 + "px";
