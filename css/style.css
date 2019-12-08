@@ -200,6 +200,17 @@ body {
     top: 100px;
     left: 50px;
 }
+.tooltip-output::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #444 transparent transparent transparent;
+}
+
 
 
 
