@@ -83,6 +83,7 @@ choices.forEach(choice => {
                 getSheetsLength(posts.currentApiURL, loadJSON);
                 // document.querySelector('.showLevel').innerHTML = '<i class="fa fa-smile-o" aria-hidden="true"></i>';
         }
+        console.log(posts.currentActive);
         if (this.dataset.level === posts.currentActive) {
             choice.classList.add('active');
         }
@@ -267,10 +268,16 @@ function makeWordContent(event, color, name) {
     const numDay = document.querySelector('.numday').textContent;
     let index  = parseInt(numDay) - 1;
     let dayWords = posts.results[index];
+    let grade = '';
+    if (posts.currentActive <= 3) {
+        grade = posts.currentActive + '학년';
+    } else {
+        grade = 'Free'
+    }
     exportContent.innerHTML = `<h3
                                     style="text-align: center"
                                 >
-                                    Day-${index+1} ${name} 
+                                  ${grade} Day -${index+1} ${name} 
                                 </h3><br>`;
     let tableHTML = `<table style="border: 1px solid black; border-collapse: collapse">
                         <tr>
