@@ -207,24 +207,27 @@ function loadNumbers() {
     const numbers = document.querySelector('.numbers');
     numbers.innerHTML = '';
     posts.results.forEach((item, i) => {
-        const span = document.createElement('span');
-        span.classList.add('number');
-        span.textContent = i + 1;
-        span.addEventListener('click', function (e) {
-            numbers.innerHTML = '';
-            document.querySelector('.game').innerHTML = '';
-            loadPage(parseInt(this.textContent) - 1);
-            posts.currentDay = this.textContent;
-        });
+        // limit day
+        if (i < 5) {
+            const span = document.createElement('span');
+            span.classList.add('number');
+            span.textContent = i + 1;
+            span.addEventListener('click', function (e) {
+                numbers.innerHTML = '';
+                document.querySelector('.game').innerHTML = '';
+                loadPage(parseInt(this.textContent) - 1);
+                posts.currentDay = this.textContent;
+            });
 
-        if (i + 1 == posts.currentPage + 1) {
-            console.log(posts.currentPage);
-            span.classList.add('active');
+            if (i + 1 == posts.currentPage + 1) {
+                console.log(posts.currentPage);
+                span.classList.add('active');
+            }
+            numbers.appendChild(span);
+            // if ((parseInt(this.textContent) - 1) == posts.currentPage) {
+            //     this.classList.add('isActive');
+            // }
         }
-        numbers.appendChild(span);
-        // if ((parseInt(this.textContent) - 1) == posts.currentPage) {
-        //     this.classList.add('isActive');
-        // }
     });
 }
 
@@ -265,10 +268,16 @@ function makeWordContent(event, color, name) {
     const numDay = document.querySelector('.numday').textContent;
     let index  = parseInt(numDay) - 1;
     let dayWords = posts.results[index];
+    let grade = '';
+    if (posts.currentActive <= 3) {
+        grade = posts.currentActive + '학년';
+    } else {
+        grade = 'Free';
+    }
     exportContent.innerHTML = `<h3
                                     style="text-align: center"
                                 >
-                                    Day-${index+1} ${name} 
+                                    ${grade} Day-${index+1} ${name} 
                                 </h3><br>`;
     let tableHTML = `<table style="border: 1px solid black; border-collapse: collapse">
                         <tr>
