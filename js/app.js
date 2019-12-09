@@ -206,24 +206,27 @@ function loadNumbers() {
     const numbers = document.querySelector('.numbers');
     numbers.innerHTML = '';
     posts.results.forEach((item, i) => {
-        const span = document.createElement('span');
-        span.classList.add('number');
-        span.textContent = i + 1;
-        span.addEventListener('click', function (e) {
-            numbers.innerHTML = '';
-            document.querySelector('.game').innerHTML = '';
-            loadPage(parseInt(this.textContent) - 1);
-            posts.currentDay = this.textContent;
-        });
+        // limit the number
+        if (i < 5) {
+            const span = document.createElement('span');
+            span.classList.add('number');
+            span.textContent = i + 1;
+            span.addEventListener('click', function (e) {
+                numbers.innerHTML = '';
+                document.querySelector('.game').innerHTML = '';
+                loadPage(parseInt(this.textContent) - 1);
+                posts.currentDay = this.textContent;
+            });
 
-        if (i + 1 == posts.currentPage + 1) {
-            console.log(posts.currentPage);
-            span.classList.add('active');
+            if (i + 1 == posts.currentPage + 1) {
+                console.log(posts.currentPage);
+                span.classList.add('active');
+            }
+            numbers.appendChild(span);
+            // if ((parseInt(this.textContent) - 1) == posts.currentPage) {
+            //     this.classList.add('isActive');
+            // }
         }
-        numbers.appendChild(span);
-        // if ((parseInt(this.textContent) - 1) == posts.currentPage) {
-        //     this.classList.add('isActive');
-        // }
     });
 }
 
