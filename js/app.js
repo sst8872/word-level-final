@@ -272,7 +272,7 @@ function makeWordContent(event, color, name) {
     if (posts.currentActive <= 3) {
         grade = posts.currentActive + '학년';
     } else {
-        grade = 'Free'
+        grade = 'Free';
     }
     exportContent.innerHTML = `<h3
                                     style="text-align: center"
