@@ -208,7 +208,6 @@ function loadNumbers() {
     numbers.innerHTML = '';
     posts.results.forEach((item, i) => {
         // limit day
-        if (i < 5) {
             const span = document.createElement('span');
             span.classList.add('number');
             span.textContent = i + 1;
@@ -227,7 +226,6 @@ function loadNumbers() {
             // if ((parseInt(this.textContent) - 1) == posts.currentPage) {
             //     this.classList.add('isActive');
             // }
-        }
     });
 }
 
